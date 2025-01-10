@@ -1,0 +1,28 @@
+FROM node:18
+
+# Establecer el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Instalar git para clonar el repositorio
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
+
+# Clonar el repositorio desde GitHub
+RUN git clone https://github.com/peereeeet/TEACHME-BACKEND-EA.git .
+
+# Instalar las dependencias globales necesarias, incluido TypeScript
+RUN npm install -g typescript
+
+# Instalar las dependencias del proyecto
+RUN npm install
+
+# Solucionar problemas potenciales con bcrypt
+RUN npm rebuild bcrypt --build-from-source
+
+# Compilar TypeScript
+RUN tsc
+
+# Exponer el puerto para el backend
+EXPOSE 3000
+
+# Comando para iniciar la aplicación
+CMD ["node", "dist/app.js"]
