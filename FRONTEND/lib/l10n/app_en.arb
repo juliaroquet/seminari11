@@ -1,0 +1,38 @@
+{
+    "register": "Register",
+    "name": "Name",
+    "email": "Email",
+    "age": "Age",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "alreadyHaveAccount": "Already have an account? Sign in",
+    "@register": {
+      "description": "Text for the register button",
+      "type": "text"
+    },
+    "@name": {
+      "description": "Label for the name field",
+      "type": "text"
+    },
+    "@email": {
+      "description": "Label for the email field",
+      "type": "text"
+    },
+    "@age": {
+      "description": "Label for the age field",
+      "type": "text"
+    },
+    "@password": {
+      "description": "Label for the password field",
+      "type": "text"
+    },
+    "@confirmPassword": {
+      "description": "Label for the confirm password field",
+      "type": "text"
+    },
+    "@alreadyHaveAccount": {
+      "description": "Text for the sign-in link",
+      "type": "text"
+    }
+  }
+  

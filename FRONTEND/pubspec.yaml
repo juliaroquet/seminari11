@@ -1,0 +1,56 @@
+name: flutter_application_1
+description: "A new Flutter project."
+publish_to: 'none' # Prevents accidental publishing
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.5 # Gestión de estado reactivo y navegación
+  http: ^0.13.5 # Manejo de solicitudes HTTP
+  provider: ^6.0.5 # Manejo de estado adicional
+  cupertino_icons: ^1.0.5 # Íconos para diseño iOS
+  dio: ^5.2.0 # Cliente HTTP más avanzado
+  flutter_lints: ^2.0.1 # Reglas de linting
+  json_annotation: ^4.8.1 # Para manejar JSON en modelos
+  logger: ^1.1.0 # Para depuración y registro de logs
+  web_socket_channel: ^2.3.0
+  socket_io_client: ^3.0.2
+  google_maps_flutter: ^2.2.0 # Versión compatible
+  geolocator: ^9.0.2 # Para obtener coordenadas
+  flutter_map: ^4.0.0
+  latlong2: ^0.8.1 # Necesario para las coordenadas
+  flutter_localizations:
+    sdk: flutter # Localización oficial de Flutter
+  intl: ^0.19.0 # Paquete para manejar traducciones
+  image_picker: ^0.8.5
+  cloudinary_sdk: ^5.0.0+1
+  url_launcher: ^6.1.10
+  table_calendar: ^3.0.7
+  shared_preferences: ^2.0.15 
+  flutter_calendar_carousel: ^2.4.4
+  audioplayers: ^3.0.0
+  flutter_time_picker_spinner: ^2.0.0
+  fl_chart: ^0.70.0
+  
+  
+
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.6 # Para generar archivos automáticos
+  json_serializable: ^6.6.1 # Serialización y deserialización JSON
+  flutter_lints: ^2.0.1 # Reglas de linting
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/l10n/ # Carpeta donde estarán los archivos de localización
+    - assets/alert_sound.mp3
